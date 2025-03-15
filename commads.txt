@@ -1,0 +1,10 @@
+python .\intersect_shp.py "C:/CWL/spatial/Intersect/input_shapefile/OK_Counties.shp" "C:/CWL/spatial/Intersect/intersect_shapefile/OK_metropolitans.shp"
+
+docker build -t eforoutan/intersect_shp:latest .
+
+
+
+docker push eforoutan/intersect_shp  
+
+cwltool intersect_shp.cwl intersect_shp.yml
+

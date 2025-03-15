@@ -1,0 +1,9 @@
+input_shapefile:
+  class: Directory
+  path: Hospitals
+  # path: input_shapefile
+
+intersect_shapefile:
+  class: Directory
+  path: zcta_2
+  # path: intersect_shapefile
